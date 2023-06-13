@@ -1,0 +1,344 @@
+body{
+    margin: 0;
+    background-color: bisque;
+    background-position:  center; 
+    justify-content: center;
+    overflow-x: hidden;  
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    position: relative;
+    font-size: 10vh;
+    -webkit-text-stroke:3px goldenrod ;
+}
+.both{
+    border-bottom: 2px;
+    display:grid;
+    column-gap:5px;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-bottom: 20px;
+}
+.image{
+   width: 75%; 
+   height: 70%;
+   margin-left: 15px;
+   margin-bottom: 55px;
+}
+.text{
+    font-size: 21px;
+
+ } 
+.book{
+    background-image:url(picture/s4.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+}
+.form{
+    background-color: black;
+    height: 480px;
+    width: 700px;
+    margin:auto;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.content h1{
+    color:goldenrod; 
+    text-align: center; 
+    margin-top: 10px;
+}
+.first-block{
+border: 2px solid goldenrod;
+width: 250px;
+position: absolute;
+margin-left: 70px;
+margin-top: 40px;
+}
+.element{
+    border: 1px solid white;
+    margin:10px ;
+    padding: 10px;
+}
+.element #fname{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #lname{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #email{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #pnumber{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #dpdate{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #rdate{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #nperson{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #room{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #price{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+.element #rtype{
+    border: none;
+    background: transparent;
+    color:goldenrod;
+    font-family: verdana;
+}
+
+
+
+.second-block{
+    border:2px  solid goldenrod;
+    margin-left: 400px;
+    width:250px;
+    margin-top: 60px;   
+}
+::placeholder{
+    color:goldenrod;
+    font-family: verdana;
+}
+input[type=submit]{
+    border:3px solid goldenrod;
+    background:none;
+    color:goldenrod;
+    margin-left: 325px;
+    margin-top:40px ;
+    padding:5px;
+    width:80px;
+    font-family: verdana;
+}
+.con
+{
+   font-size: 20px;
+   color: goldenrod;
+   width: 100%;
+   height: 80%;
+   grid-column-gap: 20px;
+   padding-top: 10px;
+   margin: 0 auto;
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 5px;
+   background: rgba(0,0,0,0.7) url(image/lalibela\ 3.jpg);
+   background-size: cover;
+   background-blend-mode: darken;
+}
+h3{
+   padding: 10px;
+   text-align: left;
+   font-size: 30px;
+   color:goldenrod;
+font-family: verdana;
+margin-left: 20px;
+padding-bottom: 3px;
+}
+.con a{
+    color: goldenrod;
+    text-decoration: none;
+    font-family: verdana;
+    padding-top: 10px;
+ }
+ .con p{
+    font-family: verdana;
+    line-height: 35px;
+ }
+ @media (max-width:800px) {
+    .grid-container{
+       display:flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .con{
+       max-width:100%;
+       margin:0 auto;
+       grid-column-gap:3px ;
+       padding:7px ;
+      
+    }
+    .text h3{
+       font-size:16px;
+    }
+    .con a{
+       font-size: 14px;
+    }
+    .con p{
+       font-size: 14px;
+       line-height: 25px;
+    }
+    .first-block{
+        width: 200px;
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+    .second-block{
+        margin-left: 250px;
+        width:200px;
+        margin-top: 60px;
+    }
+    input[type="submit"]{ 
+    margin-left: 195px;
+    margin-top:40px ;
+    padding:5px;
+    width:80px;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        position: relative;
+        font-size: 10vh;
+    }
+}
+@media(max-width:950px){
+    .both{
+        display:flex;
+       flex-wrap: wrap;
+    justify-content: center;
+    }
+    .image{
+        width: 75%; 
+        height: 70%;
+        margin:0;
+        margin-bottom: 40px;
+     }
+     .text{
+         font-size: 18px;
+         line-height: 28px;
+         padding-left: 6px;
+     }
+     h2{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 10vh;
+     }
+}
+.menu-bar
+{
+   background: rgb(0,0,0);
+   height: 80px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 5%;
+
+}
+.menu-bar ul
+{
+   display: inline-flex;
+   list-style: none;
+   color:goldenrod;
+   font-family: verdana;
+}
+.menu-bar ul li
+{
+   width: 110px;
+   margin: 10px;
+   padding: 0px;
+}
+.menu-bar ul li a
+{
+   text-decoration: none;
+   color: goldenrod;
+   font-family: verdana;
+
+}
+.active, .menu-bar ul li:hover
+{
+   border-radius: 3px;
+}
+
+.sub-menu-1
+{
+   display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+   display: block;
+   position: absolute;
+   background: black;
+   margin-top: 1px;
+   margin-left: -1px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+   display: block;
+   margin: 3px;
+}
+.menu-bar ul li a:hover{
+   color: white;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+   width: 150px;
+   padding: 10px;
+   border-radius: 0;
+   text-align: left;
+}
+.sub-menu-1 ul a:hover{
+   color: white;
+}
+@media (max-width:700px)
+{
+  .menu-bar h3{
+      font-size:20px;
+      padding:10px;
+   }
+   .menu-bar ul li{
+      margin:0;
+      padding:0;
+   }
+}
+*
+{
+   padding: 0;
+   margin: 0;
+   font-family:verdana;
+   box-sizing: border-box;
+}
+h3{
+  text-align: left;
+  padding: 25px;
+  color:goldenrod;
+}

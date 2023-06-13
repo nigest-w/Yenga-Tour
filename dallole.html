@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+    <body>
+      <div class="menu-bar">
+        <h3>Yegna tour</h3>
+        <ul>
+        <li class="active"><a href="abcd.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="#" >Book</a>
+            <div class="sub-menu-1">
+               <ul>
+                  <li><a href="gonder.html">Gonder</a></li>
+                  <li><a href="axum.html">Axum</a></li>
+                  <li><a href="lalibela.html">Lalibela</a></li>
+                  <li><a href="dallole.html">Dallol</a></li>
+                  <li><a href="semen.html">Simien mountain</a></li>
+                  <li><a href="bahirdar.html">Bahirdar</a></li>
+               </ul>
+             </div>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        </div>
+        <h2> Danakil Depression</h2>
+        <div class="both">
+        <div class="image">
+            <img src="picture/d1.jfif" width="600" height="450">
+        </div>
+        <div class="text">
+        <p>  
+        Dallol is a cinder cone volcano in the Danakil Depression, 
+        although its unique geology means it lacks any of the archetypal volcanic looks.
+        Instead, Dallol is a canvas of bright green, reds, and yellows distributed across hundreds 
+        of hot acidic springs and mounds of salt deposits. 
+        The hydrothermal activity below the Dallol crater is responsible for this kaleidoscopic landscape.
+        As groundwater diffuses across from the highlands, it is heated by the magma below Dallol and pushed through the crater,
+        dissolving salts and other minerals in the process. These minerals oxidize to create colourful, supersaturated hot springs.
+        The intense heat of the Danakil then evaporates the water, leaving behind colourful salt formations that demarcate the springs. 
+        
+        The wild Dallol landscape is the result of ongoing geological processes, which means Dallol is an extremely dynamic landscape, 
+        with new springs and salt formations arising continuously. Although similar in appearance to colourful springs of America’s Yellowstone National Park,
+        Dallol’s colours arise from inorganic, geological processes, rather than biological ones. 
+
+        The intense heat of the Danakil Depression, combined with the extreme concentrations of salts, potash, and other minerals in the hot 
+        springs makes Dallol prime research ground for poly extremophile microbes, which may hold clues as to how life began on Earth, 
+        and how life might exist on other planets like Mars. 
+    </p><br><br>
+        </div>
+        </div>
+     <div class="both">
+      <div class="image">
+        <img src="picture/d2.jfif" width="600" height="300">
+      </div>
+      <div class="text">
+        <p>
+        Dallol has some of the most colorful landscapes on Earth. The hot magma below heats groundwater flowing in from the surrounding highlands.
+        This hot water moves up toward the surface and through the evaporite deposits, dissolving salt, potash, and other soluble minerals.
+
+        The supersaturated brine emerges through hot springs in the floor of the craters. As the brines evaporate in the hot arid climate, 
+        extensive salt formations are formed on the floor of the craters. These are colored white, yellow, brown, orange, and green by sulfur,
+        dissolved iron, mud, and the life activity of halophile algae.
+        Dallol Crater: Mud, salt, iron stains, halophile algae, and hot spring activity produce a colorful but dangerous landscape in the Dallol craters.
+        The most recent was formed in 1926 by a phreatic eruption that blasted through shallow salt and sediments to produce a maar. A continuous flow of 
+        supersaline hydrothermal water feeds the colorful lakes and alters the original eruption site.
+      </p>
+      </div>
+     </div>
+       
+     <div class="book">
+       <form class="form" >
+        <div class="conent">
+            <h1 style="color:goldenrod; text-align: center; margin-top: 10px;" >Book Now </h1>
+            <div class="first-block">
+                <div class="element">
+   <input type="text" id="fname" placeholder="Firts Name">
+                </div>
+                <div class="element">
+ <input type="text" id="lname" placeholder="Last Name">
+                 </div>
+                    <div class="element">
+    <input type="email" id="email" placeholder="E-mail">
+                 </div>
+         <div class="element">
+ <input type="number" id="pnumber" placeholder="Phone number">
+        </div>
+        <div class="element">
+          <select id="price">
+             <option value="">Total Price</option>
+             <option value="">Day $210,1 person</option>
+             <option value="">3 Day $500,1 prson</option>
+             <option value="">1 Week $1200,1 person</option>
+             <option value="">2 Week $3300,1 person</option>
+          </select>
+                   </div>
+            </div>
+            <div class="second-block">
+    <div class="element">
+        <input type="text" id="dpdate" placeholder="Departur Date" onfocus="(this.type='date')">
+            </div>
+            <div class="element">
+     <input type="text" id="rdate" placeholder="Return Date"onfocus="(this.type='date')" >
+                </div>
+        <div class="element">
+        <input type="number" id="nperson" placeholder="Number of passenger">
+            </div>
+            <div class="element">
+              <select id="rtype">
+                         <option value="">Room type</option>
+                         <option value="">Single Room</option>
+                         <option value="">Double Room</option>
+                         <option value="">Twin Room</option>
+                         <option value="">Queen Room</option>
+                         <option value="">King  Room</option>
+                      </select>
+                               </div>
+            <div class="element">
+     <select id="room">
+        <option value="">Hotel</option>
+        <option value="">Dabi Hotel and Aparment</option>
+        <option value="">Celeste Ehiopia Hotel</option>
+        <option value="">Tolip Olompia Hotel</option>
+        <option value="">HeRa Addis Hotel</option>
+        
+     </select>
+               </div>
+            </div>
+        </div>
+        <input type="submit" value="Book" class="final" onclick="validation();">
+    </div>
+   </form>
+ </div>
+<script type="text/javascript">
+function validation(){
+var F,L,E,P,DP,RD,NP,R;
+F=document.getElementById('fname').value;
+L=document.getElementById('lname').value;
+E=document.getElementById('email').value;
+P=document.getElementById('pnumber').value;
+DP=document.getElementById('dpdate').value;
+RD=document.getElementById('rdate').value;
+NP=document.getElementById('nperson').value;
+R=document.getElementById('room').value;
+
+if(F=='' || L=='' || E==''|| P==''|| DP==''|| RD==''|| NP==''|| R=='')
+alert("please fill all the detail for booking")
+}
+</script>
+<div class="con">
+    <div class="text">
+       <pre>
+       <h3>Attractions</h3>
+          <p>
+      <a href="gonder.html">Gonder</a>
+      <a href="axum.html">Axum</a>
+      <a href="lalibela.html">Lalibela</a>
+      <a href="semen.html">Simien mountain</a>
+      <a href="dallole.html">Danakil depression</a>
+      <a href="bahirdar.html">Bahirdar</a>
+          </p>
+          </pre>   
+  </div>
+  <div class="text">
+    <pre>
+    <h3>Links</h3>
+    <p>
+    <a href="abcd.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact us</a>
+       </p>
+    </pre>
+  </div>
+  <div class="text">
+   <pre>
+     <h3>Contact us</h3>
+  <p>
+    +251 929 04 11 82
+    <a href="mailto:wnigest@gmail.com">yenga@gmail.com</a>
+    Bahirdar signalmol
+  
+  </pre>
+  
+  </div>
+  
+    </div>    
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

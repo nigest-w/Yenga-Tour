@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+    <body>
+      <div class="menu-bar">
+        <h3>Yegna tour</h3>
+        <ul>
+        <li class="active"><a href="abcd.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="#" >Book</a>
+            <div class="sub-menu-1">
+               <ul>
+                  <li><a href="gonder.html">Gonder</a></li>
+                  <li><a href="axum.html">Axum</a></li>
+                  <li><a href="lalibela.html">Lalibela</a></li>
+                  <li><a href="dallole.html">Dallol</a></li>
+                  <li><a href="semen.html">Simien mountain</a></li>
+                  <li><a href="bahirdar.html">Bahirdar</a></li>
+               </ul>
+             </div>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        </div>
+        <h2>Gonder</h2>
+        <div class="both">
+        <div class="image">
+            <img src="picture/gon.2.jpg" width="600" height="450">
+        </div>
+        <div class="text">
+        <p>  
+            Gondar was Ethiopia’s capital between 1632 and 1855, and it
+            remains one of the country’s richest areas in terms of
+            history, culture and natural beauty. Gondar is a land of
+            medieval mystery and the center of an important trading
+            empire. The city holds the remains of several 
+            well-preserved royal castles, including those in Fasil 
+             Ghebbi (Royal Enclosure), for which Gondar has been 
+            called the <q>Camelot of Africa</q>. This UNESCO registered 
+             site is an ideal touristic destination that connects 
+            almost all of the historic routes in Ethiopia.. From 
+            the same period, Fasilades Baths are well worth a visit,
+             and the church of Debre Birham Selassie contains some 
+             of the finest religious art in Ethiopia with Incredibly
+             vibrant and evocative images depicting the stories of 
+             saints and martyrs. Gondar is also the gateway town to
+             the Simien Mountains National Park and one of the 
+             best places to be during
+             the festival of Timkat that takes place every January.
+            
+    </p><br><br>
+        </div>
+        </div>
+     <div class="both">
+      <div class="image">
+        <img src="picture/gon.1.jpg" width="600" height="300">
+      </div>
+      <div class="text">
+        <p>
+Gondar, or Gonder, is a city in northern Ethiopia. It's known forthe walled 
+Fasil Ghebbi fortress and palace compound, once the seat of Ethiopian emperors.
+Dominating it  is the immense17th-century castle of Emperor Fasilides,
+which combinesPortuguese, Indian and local architectural styles. 
+ Outside the complex is Debre Berhan Selassie church, with an interior of elaborate 
+ murals, including a ceiling of faces.
+ Gonder was the third capital city of Ethiopia, as evidenced by the crumbling castle ruins that once housed the emperors,
+ kings, and queens of this land.
+ These ruins are now a UNESCO World Heritage Site.  
+
+ In the centre of town lies one of Ethiopia's most famous churches, where the walls are painted with vivid depictions of biblical events,
+ and the roof above covered in the faces of angels. 
+ 
+ Gonder is the gateway town to the Simien Mountains National Park, and is one of the best places to be during the festival of Timkat that takes place every January. 
+      </p>
+      </div>
+     </div>
+       
+     <div class="book">
+       <form class="form" >
+        <div class="content">
+            <h1>Book Now </h1>
+            <div class="first-block">
+                <div class="element">
+   <input type="text" id="fname" placeholder="Firts Name">
+                </div>
+                <div class="element">
+ <input type="text" id="lname" placeholder="Last Name">
+                 </div>
+                    <div class="element">
+    <input type="email" id="email" placeholder="E-mail">
+                 </div>
+         <div class="element">
+ <input type="number" id="pnumber" placeholder="Phone number">
+        </div>
+        <div class="element">
+          <select id="price">
+             <option value="">Total Price</option>
+             <option value="">Day $210,1 person</option>
+             <option value="">3 Day $500,1 prson</option>
+             <option value="">1 Week $1200,1 person</option>
+             <option value="">2 Week $3300,1 person</option>
+          </select>
+                   </div>
+            </div>
+            <div class="second-block">
+    <div class="element">
+        <input type="text" id="dpdate" placeholder="Departur Date" onfocus="(this.type='date')">
+            </div>
+            <div class="element">
+     <input type="text" id="rdate" placeholder="Return Date"onfocus="(this.type='date')" >
+                </div>
+        <div class="element">
+        <input type="number" id="nperson" placeholder="Number of passenger">
+            </div>
+            <div class="element">
+              <select id="rtype">
+                         <option value="">Room type</option>
+                         <option value="">Single Room</option>
+                         <option value="">Double Room</option>
+                         <option value="">Twin Room</option>
+                         <option value="">Queen Room</option>
+                         <option value="">King  Room</option>
+                      </select>
+                               </div>
+            <div class="element">
+     <select id="room">
+        <option value="">Hotel</option>
+        <option value="">Dabi Hotel and Aparment</option>
+        <option value="">Celeste Ehiopia Hotel</option>
+        <option value="">Tolip Olompia Hotel</option>
+        <option value="">HeRa Addis Hotel</option>
+        
+     </select>
+               </div>
+            </div>
+        </div>
+        <input type="submit" value="Book" class="final" onclick="validation();">
+            </div>
+           </form>
+         </div>
+    <script type="text/javascript">
+       function validation(){
+        var F,L,E,P,DP,RD,NP,R;
+F=document.getElementById('fname').value;
+L=document.getElementById('lname').value;
+E=document.getElementById('email').value;
+P=document.getElementById('pnumber').value;
+DP=document.getElementById('dpdate').value;
+RD=document.getElementById('rdate').value;
+NP=document.getElementById('nperson').value;
+R=document.getElementById('room').value;
+
+if(F=='' || L=='' || E==''|| P==''|| DP==''|| RD==''|| NP==''|| R=='')
+  alert("please fill all the detail for booking")
+}
+    </script>
+<div class="con">
+    <div class="text">
+       <pre>
+       <h3>Attractions</h3>
+          <p>
+      <a href="gonder.html">Gonder</a>
+      <a href="axum.html">Axum</a>
+      <a href="lalibela.html">Lalibela</a>
+      <a href="semen.html">Simien mountain</a>
+      <a href="dallole.html">Danakil depression</a>
+      <a href="bahirdar.html">Bahirdar</a>
+          </p>
+          </pre>   
+  </div>
+  <div class="text">
+    <pre>
+    <h3>Links</h3>
+    <p>
+    <a href="abcd.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact us</a>
+       </p>
+    </pre>
+  </div>
+  <div class="text">
+   <pre>
+     <h3>Contact us</h3>
+  <p>
+    +251 929 04 11 82
+    <a href="mailto:wnigest@gmail.com">yenga@gmail.com</a>
+    Bahirdar signalmol
+  
+  </pre>
+  
+  </div>
+  
+    </div>    
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
